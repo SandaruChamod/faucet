@@ -1,0 +1,352 @@
+{
+  "contractName": "Logger",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "emitLog",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "test3",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"emitLog\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"test3\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Logger.sol\":\"Logger\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Logger.sol\":{\"keccak256\":\"0x15f1c2edfdff0ee8c2a4df5f552960d32bd0bd4e518ff6cc5ebbed98ca243fe2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5d8e8dbb1f006dfba8e11c711543d1c143cbb40d37c401bfb235b08aac91cff2\",\"dweb:/ipfs/Qmb2N4Y9JHP8PgQAj9DYShGuPNqyDiyCvUxnzV6hvDT4pa\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\nabstract contract Logger {\r\n    uint testNum;\r\n\r\n    constructor() {\r\n        testNum = 100;\r\n    }\r\n\r\n    function emitLog() public virtual returns(bytes32);\r\n\r\n    function test3() public pure returns(bytes32) {\r\n        return \"test3 Triggered!\";\r\n    }\r\n}",
+  "sourcePath": "D:\\Edu\\IIT\\Y5\\FYP\\Blockchain\\Practice\\faucet\\contracts\\Logger.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Logger.sol",
+    "exportedSymbols": {
+      "Logger": [
+        207
+      ]
+    },
+    "id": 208,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 183,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:3"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "Logger",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 207,
+        "linearizedBaseContracts": [
+          207
+        ],
+        "name": "Logger",
+        "nameLocation": "87:6:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 185,
+            "mutability": "mutable",
+            "name": "testNum",
+            "nameLocation": "106:7:3",
+            "nodeType": "VariableDeclaration",
+            "scope": 207,
+            "src": "101:12:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 184,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "101:4:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 192,
+              "nodeType": "Block",
+              "src": "136:32:3",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 190,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 188,
+                      "name": "testNum",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 185,
+                      "src": "147:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "313030",
+                      "id": 189,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "157:3:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100_by_1",
+                        "typeString": "int_const 100"
+                      },
+                      "value": "100"
+                    },
+                    "src": "147:13:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 191,
+                  "nodeType": "ExpressionStatement",
+                  "src": "147:13:3"
+                }
+              ]
+            },
+            "id": 193,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "133:2:3"
+            },
+            "returnParameters": {
+              "id": 187,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "136:0:3"
+            },
+            "scope": 207,
+            "src": "122:46:3",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "functionSelector": "f42c13bf",
+            "id": 198,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "emitLog",
+            "nameLocation": "185:7:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 194,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "192:2:3"
+            },
+            "returnParameters": {
+              "id": 197,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 196,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 198,
+                  "src": "218:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 195,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "218:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "217:9:3"
+            },
+            "scope": 207,
+            "src": "176:51:3",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 205,
+              "nodeType": "Block",
+              "src": "281:44:3",
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "74657374332054726967676572656421",
+                    "id": 203,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "299:18:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_a6b0af2bbe560ff778f39324d388d0461f6edb52aeb80395bb696c7e0ca1ea6a",
+                      "typeString": "literal_string \"test3 Triggered!\""
+                    },
+                    "value": "test3 Triggered!"
+                  },
+                  "functionReturnParameters": 202,
+                  "id": 204,
+                  "nodeType": "Return",
+                  "src": "292:25:3"
+                }
+              ]
+            },
+            "functionSelector": "0a8e8e01",
+            "id": 206,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "test3",
+            "nameLocation": "244:5:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 199,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "249:2:3"
+            },
+            "returnParameters": {
+              "id": 202,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 201,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 206,
+                  "src": "272:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 200,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:9:3"
+            },
+            "scope": 207,
+            "src": "235:90:3",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 208,
+        "src": "69:259:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:295:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-09-05T17:19:34.089Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
